@@ -1,0 +1,28 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run bot (uvicorn)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "uvicorn",
+      "args": ["bot:app", "--host", "0.0.0.0", "--port", "8080", "--reload"],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Generate submission.jsonl",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/generate_submission.py",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Run judge_simulator.py",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/judge_simulator.py",
+      "console": "integratedTerminal"
+    }
+  ]
+}

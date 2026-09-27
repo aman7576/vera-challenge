@@ -1,0 +1,5 @@
+fastapi>=0.110
+uvicorn[standard]>=0.29
+pydantic>=2.6
+# Optional, only needed if VERA_LLM_POLISH=1:
+anthropic>=0.34
